@@ -1,6 +1,4 @@
 
-
-````markdown
 # 🐟 Fish-Segmentation-DINOv3
 
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white)](https://pytorch.org/)
@@ -69,26 +67,26 @@ The model achieves rapid convergence, stabilizing around **Epoch 15**.
 | **Best Single Prediction** | **0.988** |
 
 ### 📈 Training Visualizations
+<p align="center">
+<b>Step-level Metrics</b><br>
+<img src="plots/1_Train_Iteration_Loss.png" width="45%" />
+<img src="plots/2_Train_Iteration_IoU.png" width="45%" />
+</p>
 
-\<p align="center"\>
-\<b\>Step-level Metrics\</b\><br>
-\<img src="plots/1\_Train\_Iteration\_Loss.png" width="48%" /\>
-\<img src="plots/2\_Train\_Iteration\_IoU.png" width="48%" /\>
-\</p\>
+<p align="center">
+<b>Epoch-level Comparisons (Mean ± Std)</b><br>
+<img src="plots/3_Train_Val_Loss_MeanStd.png" width="45%" />
+<img src="plots/5_Train_Val_IoU_MeanStd.png" width="45%" />
+</p>
 
-\<p align="center"\>
-\<b\>Epoch-level Comparisons (Mean ± Std)\</b\><br>
-\<img src="plots/3\_Train\_Val\_Loss\_MeanStd.png" width="48%" /\>
-\<img src="plots/5\_Train\_Val\_IoU\_MeanStd.png" width="48%" /\>
-\</p\>
-
-\<p align="center"\>
-\<b\>Validation Stability\</b\><br>
-\<img src="plots/4\_Val\_Iteration\_Loss.png" width="48%" /\>
-\<img src="plots/6\_Val\_Iteration\_IoU.png" width="48%" /\>
-\</p\>
+<p align="center">
+<b>Validation Stability</b><br>
+<img src="plots/4_Val_Iteration_Loss.png" width="45%" />
+<img src="plots/6_Val_Iteration_IoU.png" width="45%" />
+</p>
 
 -----
+
 
 ## 🖼️ Qualitative Results
 
@@ -105,6 +103,23 @@ A random sample of 20 images showing the model's robustness across different spe
 Performance drops (IoU \~56-79%) typically occur due to extreme occlusion, heavy glare, or ambiguous labeling in the ground truth.
 
 -----
+
+<p align="center">
+<b>🥇 Best Predictions (IoU ~98%+)</b> &nbsp;&nbsp;&nbsp;&nbsp; <b>⚠️ Failure Cases (Worst)</b><br>
+<img src="plots/Unknown-10.png" width="48%" /> <img src="plots/Unknown-9.png" width="48%" />
+</p>
+
+<p align="center">
+<b>🎲 Random Batch (Generalization Check)</b><br>
+<img src="plots/Unknown-8.png" width="90%" />
+</p>
+
+> *Top row: Side-by-side comparison of the **Best** results vs. **Failure Cases** (mostly due to glare/occlusion). Bottom row: A **Random** batch showing general model performance.*
+> *The visualization above compares the **Best** performing masks (left) against a **Random** batch (right). The bottom row highlights **Failure Cases**, mostly due to extreme glare or occlusion.*
+
+
+
+
 
 ## 🛠️ Installation
 
@@ -167,14 +182,6 @@ Fish-Segmentation-DINOv3/
 ```
 
 -----
-
-## 🤝 Contributing
-
-Contributions are welcome\! Please fork the repository and submit a pull request for any improvements or new backbone integrations.
-
-## 📝 License
-
-This project is licensed under the MIT License.
 
 ```
 ```
