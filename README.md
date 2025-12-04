@@ -24,14 +24,14 @@ DINOv3-based semantic segmentation pipeline for large-scale fish datasets. Inclu
 ---
 
 ## 🎲 Random Predictions (20 Samples)
-![Random Predictions](plots/random_examples.png)
+![Random Predictions](plots/Unkown-8.png)
 
 ---
 
 ## 🥇 Best 5 Predictions (IoU top 5)
-![Best Predictions](plots/best_examples.png)
+![Best Predictions](plots/Unkown-10.png)
 
 ---
 
 ## ⚠️ Worst 5 Predictions (IoU bottom 5)
-![Worst Predictions](plots/worst_examples.png)
+![Worst Predictions](plots/Unkown-9.png)
