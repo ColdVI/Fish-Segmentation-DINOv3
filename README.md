@@ -100,7 +100,7 @@ A random sample of 20 images showing the model's robustness across different spe
 
 #### ⚠️ Bottom 5 Predictions (Failure Cases)
 
-Performance drops (IoU \~56-79%) typically occur due to extreme occlusion, heavy glare, or ambiguous labeling in the ground truth.
+Performance drops (IoU \~56-79%) typically occur due to extreme occlusion, heavy glare, and most importantly ambiguous and FALSE labelings in the ground truth.
 
 -----
 
